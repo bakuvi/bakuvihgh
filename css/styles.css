@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1024px;
+    background-color: #baebce;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+header img {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    width: max-content;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.infographic p {
+    margin-bottom: 5px;
+}
+
+#education {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-item {
+    display: flex;
+    background-color: #baebce;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.education-left {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    padding-right: 20px;
+    background-color: #1dd2e0;
+}
+
+.education-left .year {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.education-right {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.education-right h3 {
+    margin-top: 0;
+}
+
+.education-item p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .education-left,
+    .education-right {
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+
+    .education-left {
+        text-align: left;
+    }
+}
+
+#contact form {
+}
+
+#contact label {
+    width: 120px;
+    margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#contact .radio-group {
+    display: flex;
+}
+
+#contact .radio-group label {
+    margin-right: 10px;
+}
+
+#rate {
+    margin-top: 10px;
+}
+
+.buttons {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100px;
+}
+
+.checkbox_container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header img {
+        margin: 10px auto;
+    }
+
+    #contact form {
+        flex-direction: column;
+    }
+
+    #contact label {
+        width: auto;
+    }
+}
